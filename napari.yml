@@ -1,0 +1,38 @@
+name: napari
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - pytorch-cuda=11.8
+  - numpy<=1.23.5
+  - boost
+  - pip
+  - setuptools
+  - cython
+  - napari=0.4.17
+  - pip:
+    - zarr
+    - matplotlib
+    - mahotas
+    - neuroglancer
+    - cloud-volume
+    - tensorboard
+    - tensorboardx
+    - jsmin
+    - magic-class
+    - git+https://github.com/salkmanorlab/napari-bootstrapper
+    - git+https://github.com/yajivunev/autoseg
+    - git+https://github.com/funkelab/funlib.geometry.git
+    - git+https://github.com/funkelab/funlib.persistence.git
+    - git+https://github.com/funkelab/daisy.git
+    - git+https://github.com/funkey/gunpowder.git
+    - git+https://github.com/funkelab/funlib.math.git
+    - git+https://github.com/funkelab/funlib.evaluate.git
+    - git+https://github.com/funkelab/funlib.learn.torch.git
+    - git+https://github.com/htem/waterz@hms
+    - git+https://github.com/funkelab/funlib.segment.git
+    - git+https://github.com/funkelab/lsd.git
+
